@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "InstaControl",
+  "description": "Take full control of Instagram videos.",
+  "version": "1.0",
+  "icons": {
+    "512": "icons/iplayer.webp"
+  },
+  "permissions": [
+    "tabs",
+    "declarativeNetRequest"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*"],
+      "js": ["scripts/player.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "enabled": true,
+        "id": "ruleset_1",
+        "path": "rules.json"
+      }
+    ]
+  }
+}
