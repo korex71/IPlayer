@@ -4,7 +4,7 @@
   "description": "Take full control of Instagram videos.",
   "version": "1.0",
   "icons": {
-    "512": "icons/iplayer.webp"
+    "512": "icons/iplayer.png"
   },
   "permissions": [
     "tabs",
